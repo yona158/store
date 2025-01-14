@@ -1,0 +1,28 @@
+<!-- inheir the base.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- <img src="{%static 'images/satoru.jpg' %}" alt=""> -->
+
+<h1> home page</h1>
+
+
+{% if name == 'bayan' %}
+<h2 style="color: blue;">Welcome my lady</h2>
+{% elif name == 'rayan' %}
+<h2 style="color: chartreuse;">welcome master </h2>
+{%else%}
+<h2 style="color: rgb(88, 19, 207);">welcome</h2>
+{% endif %}
+
+
+<!-- {% for x in name %}
+<h3>{{x}}</h3>
+{%endfor%} -->
+
+<!-- <h1>helloooooooooooooooooooooo</h1> -->
+{% endblock content %}
+
+<!-- <h1 style="color: rgb(15, 6, 23);">age : {{age | filesizeformat}}</h1>
+<h1 style="color: rgb(0, 0, 0);">name : {{name | add:'alrajeh' |capfirst }}</h1>  -->
